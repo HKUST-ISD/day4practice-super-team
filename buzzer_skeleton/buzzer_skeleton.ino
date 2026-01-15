@@ -46,33 +46,33 @@ void loop() {
             500 is the duration of the tone in milliseconds
     */
     // Uncomment below for Task 1 and replace ? with code
-    /*
+    
     Serial.println("Playing F4...");
-    tone(?, ?, 500);
+    tone(BUZZER_PIN,NOTE_F4, 500);
     delay(1000);
     noTone(BUZZER_PIN);
 
     Serial.println("Playing G4...");
-    tone(?, ?, 500);
+    tone(BUZZER_PIN,NOTE_G4, 500);
     delay(1000);
     noTone(BUZZER_PIN);
-  */
+  
   // Uncomment below for Task 2 and replace ? with code
- /* 
+  
    // Task 2 playing Jingle Bells
     Serial.println("Playing Jingle Bells...");
     // Iterate over the notes of the melody:
-    for (int thisNote = 0; thisNote < ? ; thisNote++) {
+    for (int thisNote = 0; thisNote < 26 ; thisNote++) {
     // To calculate the note duration, take one second divided by the note type.
     int noteDuration = 1000 / noteDurations[thisNote];
-    tone(?, ?, ?);
+    tone(BUZZER_PIN,melody[thisNote],noteDuration);
     // To distinguish the notes, set a minimum time between them.
     int pauseBetweenNotes = noteDuration * 1.30;
     delay(pauseBetweenNotes);
     // Stop the tone playing:
     noTone(BUZZER_PIN);
   }
-  */
+  
 
     
 
